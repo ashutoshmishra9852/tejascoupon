@@ -147,7 +147,7 @@
             }
 
             try {
-                const response = await fetch(`https://tejascoupon-1.onrender.com/getResults?date=${date}`);
+                const response = await fetch(`http://localhost:3000/getResults?date=${date}`);
                 const results = await response.json();
 
                 const table = document.getElementById('resultsTable');
